@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"> <!-- Tipografía Nunito -->
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-section">
+            <button id="toggle-input">+</button>
+            <input type="text" id="new-task" placeholder="Nueva tarea...">
+            <button id="add-task">Agregar</button>
+        </div>
+        <div class="tasks-container">
+            <div class="tasks-section">
+                <h2>Tareas Pendientes</h2>
+                <ul id="pending-tasks"></ul>
+            </div>
+            <div class="tasks-section">
+                <h2>Tareas Completadas</h2>
+                <ul id="completed-tasks"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
