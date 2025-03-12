@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #285070;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ddeff3;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -23,11 +23,11 @@ h1 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
-    font-family:  'Nunito', sans-serif; /* Aplicar Nunito a los títulos */
+    font-family: 'Pacifico', cursive; /* Aplicar Pacifi a los títulos */
     font-size: 3rem; /* Tamaño más grande */
     font-weight: 600; /* Semi-negrita */
     letter-spacing: 1px; /* Espaciado entre letras */
-    color: #2c3e50; /* Color moderno y relajado */
+    color: #17688e; /* Color moderno y relajado */
 }
 
 .input-section {
@@ -37,7 +37,7 @@ h1 {
     gap: 10px;
 }
 
-#toggle-input {
+#toggle-input { /* Botón para mostrar/ocultar el campo de texto (de +)*/
     padding: 10px 15px;
     background-color: #28a745;
     color: #fff;
@@ -130,23 +130,27 @@ li {
     background-color: #fff;
     transition: background-color 0.2s ease;
 }
-
+/* Estilo para la tarea completada */
 li.completed {
     background-color: #d4edda;
 }
 
+/* Estilo para el texto tachado */
 li.completed span {
     text-decoration: line-through; /* Solo el texto tachado */
 }
 
+/* Estilo para el botón de eliminar */
 li.completed button {
     text-decoration: none; /* Eliminar raya del botón "Eliminar" */
 }
 
+/* Estilo para el botón de eliminar */
 li:hover {
     background-color: #f1f1f1;
 }
 
+/* Estilo para el botón de eliminar */
 button {
     background-color: #dc3545;
     color: #fff;
@@ -158,6 +162,7 @@ button {
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
+/* Cambiar el color de fondo al pasar el cursor sobre el botón */
 button:hover {
     background-color: #c82333;
     transform: scale(1.05);
@@ -176,11 +181,13 @@ input[type="checkbox"] {
     transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
+/* Cambiar el color de fondo y borde al seleccionar el checkbox */
 input[type="checkbox"]:checked {
     background-color: #28a745;
     border-color: #28a745;
 }
 
+/* Icono de verificación */
 input[type="checkbox"]:checked::after {
     content: '✔';
     position: absolute;
@@ -189,4 +196,21 @@ input[type="checkbox"]:checked::after {
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 14px;
+}
+
+/* Estilo para el botón de búsqueda */
+#search-button {
+    padding: 10px;
+    background-color: #b1cfef;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #0056b3; /* Azul más oscuro  animacion*/
+    transform: scale(1.1);
 }
